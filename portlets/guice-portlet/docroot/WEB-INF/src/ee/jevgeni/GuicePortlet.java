@@ -21,9 +21,9 @@ public class GuicePortlet extends MVCPortlet {
 
 	@Override
 	public void doView(RenderRequest renderRequest, RenderResponse renderResponse) throws IOException, PortletException {
-		Injector injector = Guice.createInjector(new GuiceModule());
-		guiceService = injector.getInstance(GuiceService.class);
-		renderRequest.setAttribute("message", guiceService.getTestInfo());
+//		Injector injector = Guice.createInjector(new GuiceModule());
+//		guiceService = injector.getInstance(GuiceService.class);
+//		renderRequest.setAttribute("message", guiceService.getTestInfo());
 		super.doView(renderRequest, renderResponse);
 	}
 
